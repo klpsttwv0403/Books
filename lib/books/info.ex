@@ -76,7 +76,7 @@ defmodule Books.Info do
 
     defp format_history(history_info) do
         history_info
-        |> Enum.map(fn {date, title, author} -> Date.to_string(date) <> "\t" <> String.pad_trailing(title, 23 - String.length(title)) <> "\t" <> author end)
+        |> Enum.map(fn {date, title, author} -> Date.to_string(date) <> "\t" <> String.pad_trailing(title, 38 - String.length(title)) <> "\t" <> author end)
         |> Enum.join("\n")
     end
 
