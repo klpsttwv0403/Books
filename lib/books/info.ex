@@ -51,7 +51,7 @@ defmodule Books.Info do
     格式化輸出，details為map，內容參考detail
     """
     def print_detail(details) do
-        "\n從 #{details.oldest} 到 #{details.newest}，這 #{Date.diff(details.newest, details.oldest) + 1} 天中您共閱讀了 8 本書籍"
+        "\n從 #{details.oldest} 到 #{details.newest}，這 #{Date.diff(details.newest, details.oldest) + 1} 天中您共閱讀了 #{details.amount} 本書籍"
         <> "\n\n" <>
         "您的閱讀紀錄(由新到舊)："
         <> "\n" <>
